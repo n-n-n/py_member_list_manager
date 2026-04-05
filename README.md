@@ -14,7 +14,7 @@
 python setup_env.py
 ```
 
-## 3. 印刷用Fontの配置
+### 3. 印刷用Fontの配置
 1. IPAのフォントダウンロードページ（文字情報技術促進協議会）にアクセスします。
 https://moji.or.jp/ipafont/ipaex00401/
 2. 「IPAexゴシック(Ver.xxxx)」 のZIPファイルをダウンロードして解凍します。
