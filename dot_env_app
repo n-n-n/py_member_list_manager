@@ -1,0 +1,18 @@
+# --- main app ---
+APP_TITLE=" 名簿管理システム"
+
+# --- フォント設定 ---
+# Windowsなら Meiryo、Macなら Hiragino Sans などを指定できます
+APP_FONT="'Meiryo', 'Hiragino Sans', sans-serif"
+
+# --- PDF出力用フォント ---
+PDF_FONT_PATH="ipaexg.ttf"
+
+# --- OCR app ---
+# --- Google Vision API ---
+VISION_API_KEY=""
+# --- GeminiM API ---
+GEMINI_API_KEY=""
+GEMINI_VER="gemini-2.5-flash"
+#
+CSV_FILE="ocr_scanned_data.csv"
