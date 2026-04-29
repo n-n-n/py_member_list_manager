@@ -24,7 +24,12 @@ https://moji.or.jp/ipafont/ipaex00401/
 3. フォルダの中にある ipaexg.ttf というファイルを見つけます（これがフォントの本体です）。
 4. 'main_app.py'と同じ場所に配置します。
 
-### 4. OCRツールのためのAPIキーの取得
+### 4. テーブル情報の設定
+
+1. `table_schema_sample.py`を`table_schema.py`にコピー。
+2. `table_schema.py`を必要な内容に修正。
+
+### 5. OCRツールのためのAPIキーの取得
 OCRにGoogle Vision APIを使用し、その結果の処理にGemini APIを使用します。
 APIキーを取得し、`dot_env_app`の
 `VISION_API_KEY`と`GEMINI_API_KEY`に設定してください。なお取得したAPIキーや記載したファイルは共有されないように注意し管理してください。
