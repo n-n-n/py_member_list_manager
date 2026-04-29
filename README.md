@@ -1,4 +1,7 @@
-# py_member_list_manager
+# 名簿管理ツール
+
+- `main_app.py`: 名簿管理ツール
+- `ocr_app.py`: 入力補助のための、外部APIを使用したOCRツール
 
 ## Setup
 ### 1. Python 3.14のインストール
@@ -8,7 +11,7 @@
 - Mac: brew install python@3.14 または公式サイトから。
 
 ### 2. スクリプトの実行
-ターミナル（Mac）またはコマンドプロンプト（Windows）を開き、そのフォルダに移動して以下を打ちます。
+ターミナル（Mac）またはコマンドプロンプト（Windows）を開き、Pythonをインストールした環境で以下を実行します
 
 ```
 python setup_env.py
@@ -21,7 +24,15 @@ https://moji.or.jp/ipafont/ipaex00401/
 3. フォルダの中にある ipaexg.ttf というファイルを見つけます（これがフォントの本体です）。
 4. 'main_app.py'と同じ場所に配置します。
 
-### アプリケーション
+### 4. OCRツールのためのAPIキーの取得
+OCRにGoogle Vision APIを使用し、その結果の処理にGemini APIを使用します。
+APIキーを取得し、`dot_env_app`の
+`VISION_API_KEY`と`GEMINI_API_KEY`に設定してください。なお取得したAPIキーや記載したファイルは共有されないように注意し管理してください。
+
+- Google Cloud Vision API: https://cloud.google.com/vision?hl=ja
+- Gemini API: https://ai.google.dev/gemini-api/docs/api-key?hl=ja
+
+### 5. アプリケーション
 
 #### 準備
 
@@ -41,10 +52,10 @@ venv\Scripts\streamlit run {file}
 source venv/bin/activate && streamlit run {file}
 ```
 
+#### 停止
+ターミナル/コマンドプロンプトで`Ctrl + C` で停止
 
-- 3. アプリケーションの停止
-    ターミナル/コマンドプロンプトで`Ctrl + C` で停止
-
+実行環境の停止は
 ```
  source venv/bin/deactivate
 ```
