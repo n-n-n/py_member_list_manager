@@ -1,11 +1,11 @@
 # py_member_list_manager
 
 ## Setup
-### 1. Python 3.11のインストール
-まだPCに Python 3.11 が入っていない場合は、公式サイトからインストールしてください。
+### 1. Python 3.14のインストール
+まだPCに Python 3.14 が入っていない場合は、公式サイトからインストールしてください。
 
 - Windows: Python.org から "Windows installer (64-bit)" をダウンロード。
-- Mac: brew install python@3.11 または公式サイトから。
+- Mac: brew install python@3.14 または公式サイトから。
 
 ### 2. スクリプトの実行
 ターミナル（Mac）またはコマンドプロンプト（Windows）を開き、そのフォルダに移動して以下を打ちます。
@@ -21,21 +21,33 @@ https://moji.or.jp/ipafont/ipaex00401/
 3. フォルダの中にある ipaexg.ttf というファイルを見つけます（これがフォントの本体です）。
 4. 'main_app.py'と同じ場所に配置します。
 
-## 実行 
+### アプリケーション
+
+#### 準備
+
+`dot_env_app`を編集し`.env_app`にファイル名を変更します。
+
+
+#### 実行
+
+実行ファイル
+- 管理ツール`main_app.py`
+- OCRツール`ocr_app.py`
 
 ```
 # Windows
-venv\Scripts\streamlit run main_app.py
+venv\Scripts\streamlit run {file}
 # Mac
-source venv/bin/activate && streamlit run main_app.py
+source venv/bin/activate && streamlit run {file}
 ```
 
-ターミナル/コマンドプロンプトで`Ctrl + C` で停止
+
+- 3. アプリケーションの停止
+    ターミナル/コマンドプロンプトで`Ctrl + C` で停止
 
 ```
-source venv/bin/deactivate
+ source venv/bin/deactivate
 ```
 
-##
 
 
