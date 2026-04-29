@@ -29,15 +29,19 @@ def setup():
     # 4. 必要なライブラリのインストール
     # streamlit: UI
     # google-cloud-vision: OCR
+    # google-genai: Gemini LLM
     # pandas: データ処理
     # fpdf2: PDF作成（宛名用）
     # python-dotenv: 機密情報（APIキー等）の管理用
+    # pydantic: データ構造化
     libraries = [
         "streamlit",
         "google-cloud-vision",
+        "google-genai",
         "pandas",
         "fpdf2",
-        "python-dotenv"
+        "python-dotenv",
+        "pydantic",
     ]
 
     print(f"\n--- 3. ライブラリをインストール中... ---\n{', '.join(libraries)}")
@@ -47,9 +51,9 @@ def setup():
     print("環境構築が完了しました！")
     print("以下のコマンドでアプリを起動できます：")
     if os.name == "nt":
-        print(f"{venv_dir}\\Scripts\\streamlit run main_app.py")
+        print(f"{venv_dir}\\Scripts\\streamlit run xxx_app.py")
     else:
-        print(f"source {venv_dir}/bin/activate && streamlit run app.py")
+        print(f"source {venv_dir}/bin/activate && streamlit run xxx_app.py")
     print("="*40)
 
 if __name__ == "__main__":
