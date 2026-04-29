@@ -29,12 +29,15 @@ def setup():
     # 4. 必要なライブラリのインストール
     # streamlit: UI
     # google-cloud-vision: OCR
+    # google-genai: Gemini LLM
     # pandas: データ処理
     # fpdf2: PDF作成（宛名用）
     # python-dotenv: 機密情報（APIキー等）の管理用
+    # pydantic: データ構造化
     libraries = [
         "streamlit",
         "google-cloud-vision",
+        "google-genai",
         "pandas",
         "fpdf2",
         "python-dotenv",
