@@ -8,7 +8,7 @@ from google import genai
 from dotenv import load_dotenv
 from table_schema import MEMBER_APP_EXTR_PROMPT, MemberApplicationExtraction
 
-load_dotenv()  # set in ".env" file
+load_dotenv(".env_app")  # set in ".env" file
 VISION_API_KEY = os.getenv("VISION_API_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_VER = os.getenv("GEMINI_VER")
