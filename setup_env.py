@@ -37,7 +37,8 @@ def setup():
         "google-cloud-vision",
         "pandas",
         "fpdf2",
-        "python-dotenv"
+        "python-dotenv",
+        "pydantic",
     ]
 
     print(f"\n--- 3. ライブラリをインストール中... ---\n{', '.join(libraries)}")
@@ -47,9 +48,9 @@ def setup():
     print("環境構築が完了しました！")
     print("以下のコマンドでアプリを起動できます：")
     if os.name == "nt":
-        print(f"{venv_dir}\\Scripts\\streamlit run main_app.py")
+        print(f"{venv_dir}\\Scripts\\streamlit run xxx_app.py")
     else:
-        print(f"source {venv_dir}/bin/activate && streamlit run app.py")
+        print(f"source {venv_dir}/bin/activate && streamlit run xxx_app.py")
     print("="*40)
 
 if __name__ == "__main__":
